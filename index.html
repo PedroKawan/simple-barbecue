@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/grill.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/ipad.css">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <title>Barbecue</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <a href="#" class="header-top_logo"><img src="images/grill.png" alt="grill"></a>
+                <div class="header-top_buttonNavegation" id="buttonNavegation" onclick="shiftMenu()">
+                    <div class="row" id="row1"></div>
+                    <div class="row" id="row2"></div>
+                    <div class="row" id="row3"></div>
+                </div>
+            </div>
+            <nav>
+                <ul class="header-menu" id="headerMenu">
+                    <li><a href="#">Home</a>
+                    <li><a href="#">About</a>
+                    <li><a href="#calculator">Calculator</a>
+                    <li><a href="#">Contact</a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <picture class="hero-banner"><img src="images/herobanner.png" alt="family making barbecue"></picture>
+                <div class="hero_content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deserunt, eius animi quam, vel nisi voluptas dolores odit architecto quod qui eveniet quaerat, blanditiis quis! Beatae cumque quasi at sapiente.</p></div>
+            </section>
+            <section class="calculator" id="calculator">
+                <h1>Calculator</h1>
+                <form action="" class="form">
+                    <fieldset>
+                        <legend>Let's do it!</legend>
+
+                        <div class="input-container">
+                            <div class="label-container">
+                                <img class="icon" src="images/man.png" alt="men">
+                                <label for="men">Men</label>
+                            </div> 
+                            <input type="number" id="men" min="0" max="50" value="0">
+                        </div>
+                        
+                        <div class="input-container">
+                            <div class="label-container">
+                                <img class="icon" src="images/woman.png" alt="women">
+                                <label for="women">Women</label>
+                            </div>
+                            <input type="number" id="women" min="0" max="50" value="0">
+                        </div>
+                        
+                        <div class="input-container">
+                            <div class="label-container">
+                                <img class="icon" src="images/children.png" alt="children">
+                                <label for="children">Children</label>
+                            </div>
+                            <input type="number" id="children" min="0" max="50" value="0">
+                        </div>
+                        <div class="button" onclick="calc()">Enter</div>
+                        <p>(!) Enter the number of persons (specific way) who will be invited.</p>
+                    </fieldset>
+                </form>
+                <div class="form-result" id="formResult">
+                    <h3>Result</h3>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            @ UNICESUMAR
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
